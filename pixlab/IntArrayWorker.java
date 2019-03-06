@@ -100,15 +100,30 @@ public class IntArrayWorker
   }
   public int getCount(int n)
   {
-    for(int i =1; i<matrix.length;i++)
+    int count = 0;
+    for(int[] row : matrix)
     {
-        for(int j = 0; j<matrix[0].length; j++)
+        for(int pixel : row)
         {
-        
+            if(pixel==n)
+            {
+                count++;
+            }
         }
     }
-    return 1;  
+    return count;  
     
+  }// NED getCount(int n)
+  public int getLargest()
+  {
+      
+      for(int x : )
+      {
+        
+        
+      }
+      
   }
+  
  
 }
