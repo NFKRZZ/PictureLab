@@ -116,13 +116,29 @@ public class IntArrayWorker
   }// NED getCount(int n)
   public int getLargest()
   {
-      
-      for(int x : )
-      {
-        
-        
-      }
-      
+     int max = matrix[0][0];
+    for(int [] x : matrix)
+     {
+         for(int z : x)
+         {
+           if(z>max)
+           max=z;
+         }
+    }
+    return max;
+  }
+  public int getColTotal(int r)
+  {
+    int total = matrix[0][0];
+    int a=0;
+    for(int [] x : matrix)
+    {
+             
+      total+=matrix[a][r];
+      a++; 
+       
+    }
+    return total;
   }
   
  
