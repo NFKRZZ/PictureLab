@@ -50,22 +50,17 @@ public class PictureTester
     swan.edgeDetection(10);
     swan.explore();
   }
-  
-  /** Main method for testing.  Every class can have a main
-    * method in Java */
-  public static void main(String[] args)
+  public static void testMirrorVerticalRightToLeft()
   {
-    // uncomment a call here to run a test
-    // and comment out the ones you don't want
-    // to run
-    testZeroBlue();
-    //testKeepOnlyBlue();
-    //testKeepOnlyRed();
-    //testKeepOnlyGreen();
-    //testNegate();
-    //testGrayscale();
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorVerticalRightToLeft();
+    caterpillar.explore();
+    
+  }
     //testFixUnderwater();
     //testMirrorVertical();
+    testMirrorVerticalRightToLeft();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
@@ -81,4 +76,3 @@ public class PictureTester
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
   }
-}
